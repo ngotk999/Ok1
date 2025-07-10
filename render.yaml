@@ -1,7 +1,9 @@
 services:
   - type: web
-    name: my-python-bot
+    name: your-app-name
     env: python
+    plan: free
     buildCommand: ""
     startCommand: "python ok.py"
-    autoDeploy: true
+    repo: https://github.com/ngotk999/Ok1
+    branch: main

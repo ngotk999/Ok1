@@ -1,9 +1,7 @@
 services:
   - type: web
-    name: your-app-name
+    name: spam-telegram-bot
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python ok.py"
-    repo: https://github.com/ngotk999/Ok1
-    branch: main

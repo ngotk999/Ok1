@@ -1,7 +1,12 @@
+# Exported from Render on 2025-07-11
+version: "1"
 services:
   - type: web
-    name: gpt-bot
-    env: python
+    name: gpt-ask-bot
+    runtime: python
     plan: free
+    region: singapore
+    repo: https://github.com/ngotk999/Ok1
     buildCommand: pip install -r requirements.txt
     startCommand: python ok.py
+    autoDeploy: true

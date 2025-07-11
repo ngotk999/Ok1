@@ -4,12 +4,8 @@ import openai
 from flask import Flask
 import threading
 
-# Lấy token và API key từ biến môi trường
 BOT_TOKEN = os.environ.get("7993764210:AAGnM45yo0rRwqHoRh7pN5W-C10NdJ-b8QI")
 OPENAI_API_KEY = os.environ.get("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")
-
-bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
-openai.api_key = OPENAI_API_KEY
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
